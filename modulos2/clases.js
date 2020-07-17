@@ -17,7 +17,3 @@ export class Cliente {
     }
 
 }
-
-export function holaMundo() {
-    console.log("Hola mundo!");
-}
