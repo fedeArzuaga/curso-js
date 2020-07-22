@@ -139,12 +139,33 @@ const autos = [
 /* const resultado = autos.map( auto => auto);
 console.log(resultado); */
 
-// filter
+// filter => Es parecido al map, solamente que crea un nuevo arreglo filtrando los tipos de datos que se encuentran. Es uno de los más utilizados.
 
-// find
+// let resultado = autos.filter( auto => auto.color === 'Rojo' );
 
-// reduce
+// let resultado = autos.filter( auto => auto.year === 2018 );
 
-// some
+/* let resultado = autos.filter( auto => auto.puertas <= 2 && auto.color === 'Rojo');
 
+console.log(resultado); */
 
+// find => La diferencia entre este filter, es que este retorna un array con el PRIMERO QUE ENCUENTRE. Solo almacena uno
+
+/* let resultado = autos.find( autos => autos.modelo === 'Mustang' );
+console.log(resultado); */
+
+// reduce => Toma todos los valores y retorna un valor unico, Ej sumar todos los precios de los autos
+
+/* let resultado = autos.reduce( (total, auto) => total + auto.precio, 0);
+
+const numeros = [1,2,3];
+
+let resultados = numeros.reduce( (total, numero) => total + numero, 0);
+
+console.log(resultados); */
+
+// some => Evalúa cierta condicion y retorna un booleano true or false
+
+/* let resultados2 = autos.some( auto => auto.precio > 10000 );
+
+console.log(resultados2); */
