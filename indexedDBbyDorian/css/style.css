@@ -1,0 +1,32 @@
+body{
+    background: rgb(87, 87, 87);
+}
+
+.form {
+    width: 100%;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+label,
+p{
+    color: white;
+}
+
+
+[type="submit"]{
+    background: rgb(255,69,0);
+    border: none;
+    padding: 0.2rem 0.8rem;
+    border-radius: 15px;
+    color: #ccc;
+    cursor: pointer;
+    margin: 1rem 0;
+}
+
+#tasks{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+}

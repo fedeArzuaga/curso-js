@@ -115,8 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         // Creamos un objectStore
-
-        let objectStore = DB.transaction('citas').objectStore('citas');
+        let objectStore = DB.transaction(['citas'], 'readwrite').objectStore('citas');
 
         // Esto retorna una peticion
         objectStore.openCursor().onsuccess = function(e) {
