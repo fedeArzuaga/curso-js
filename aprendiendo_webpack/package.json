@@ -1,0 +1,21 @@
+{
+  "name": "aprendiendo_webpack",
+  "version": "1.0.0",
+  "description": "Archivo para aprender webpack",
+  "main": "index.js",
+  "scripts": {
+    "ejecutar": "webpack --mode development"
+  },
+  "author": "Fefito",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/register": "^7.10.5",
+    "babel-loader": "^8.1.0",
+    "cli": "^1.0.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
