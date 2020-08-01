@@ -1,0 +1,11 @@
+$variable: #444;
+$text-color: #ccc;
+
+body{
+    background: $variable;
+
+    h1{
+        color: $text-color;
+    }
+
+}
