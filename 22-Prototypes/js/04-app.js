@@ -25,10 +25,21 @@ Client.prototype.nameClientSalary = function() {
 }
 
 function Person( name, salary, phone ) {
-    this.name = name;
-    this.salary = salary;
+    // Hereda las propiedades de Client
+    Client.call(this, name, salary);
     this.phone = phone;
+}
+
+// Heredamos las funciones de Client
+Person.prototype = Object.create( Client.prototype );
+
+// Heredamos el constructor de Client
+Person.prototype.constructor = Client;
+
+Person.prototype.showPhone = function() {
+    return `El telefono de esta persona es: ${this.phone}`;
 }
 
 const jhon = new Person('Jhon Doe', 2500, 59892345332);
 console.log(jhon)
+console.log(jhon.showPhone());
