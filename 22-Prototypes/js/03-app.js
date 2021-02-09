@@ -4,12 +4,30 @@ function Client(name, salary) {
 }
 
 Client.prototype.clientType = function() {
-    console.log(this.salary);
+    let type;
+
+    if( this.salary > 10000 ) {
+        type = 'Gold'
+    } else if ( this.salary > 5000 ) {
+        type = 'Platinum';
+    } else {
+        type = 'Normal';
+    }
+
+    return type;
+
+}
+
+Client.prototype.nameClientSalary = function() {
+
+    return `Nombre: ${this.name}, Saldo: ${this.salary}, Tipo Cliente: ${this.clientType()}`;
+
 }
 
 
 // Instanciar
-const peter = new Client('Peter', 5000);
-peter.clientType();
+const peter = new Client('Peter', 7500);
+console.log(peter.clientType());
+console.log(peter.nameClientSalary());
 
 console.log(peter);
